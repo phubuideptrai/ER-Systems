@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{CFD3974B-A249-4E79-A383-76881849FD1F}">
+	<children>
+		<child name="E-Restaurant" key="{B5CB20C8-E1A8-47A0-987D-2FFC0DF0135E}" path="E-Restaurant\E-Restaurant.mds" />
+	</children>
+	<testItems key="{15E7BA78-3623-42E7-A2CB-2B7F2C9B7E75}">
+		<children>
+			<testItem key="{B5CB20C8-E1A8-47A0-987D-2FFC0DF0135E}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{0C8628C4-7CC5-4B42-9128-60C9E06D2F4E}" />
+	<analysis key="{B711D154-52AE-4C15-BE5E-F151AA8ADAE4}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

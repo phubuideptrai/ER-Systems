@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{EADD4179-A962-40A0-8FB7-4474F0B725D0}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="QuanLyNhaHang" Key="{04B7AD39-4019-4E58-A9E3-AB58F00644B1}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="QuanLyNhaHang" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndConsoleWindowClass" Key="{6CDCAB6E-5127-483B-B9F6-28553B65108C}">
+								<Image FileName="-1546639604" Left="0" Top="0" Right="1119" Bottom="647" />
+								<TypeInfo Item0="{13BD3F58-D3D1-41A8-AD4F-020F26B036DD}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="ConsoleWindowClass" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="HwndSource_MainWindow" Key="{BE935788-FB3C-434F-AB6A-BA3CE73B99BB}">
+								<Image FileName="-651572962" Left="0" Top="0" Right="438" Bottom="625" />
+								<Properties>
+									<Property Name="RootVisual.ClrClassName">
+										<Value Value="MainWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Login" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="MainWindow" Key="{E65304F3-2A23-410C-BD29-6FCCDE52C6D7}">
+										<Image FileName="-651572962" Left="9" Top="38" Right="448" Bottom="664" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="QuanLyNhaHang.MainWindow" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="usernameContainer" Key="{DF64C068-DBB6-4FBC-8B44-BA454892A0CE}" ExtendedFind="True">
+												<Image FileName="-651572962" Left="56" Top="325" Right="370" Bottom="357" />
+												<TypeInfo Item0="{821F3C6B-8469-4C54-92BE-4CB07C2B814A}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="usernameContainer" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="passwordBox" Key="{133A4F22-94A0-4755-A9D5-726F4A2DCE6D}" ExtendedFind="True">
+												<Image FileName="1593725617" Left="56" Top="369" Right="370" Bottom="401" />
+												<TypeInfo Item0="{E95C0E35-B8E9-4F1A-842C-BAFD28784191}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="passwordBox" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="ButtonLogin" Key="{8EA8B022-A992-43B9-A2CE-4ACA96ADD122}" ExtendedFind="True">
+												<Image FileName="-1040489795" Left="125" Top="469" Right="313" Bottom="510" />
+												<TypeInfo Item0="{A178E9D5-174C-4CB4-BCFF-E716C14844F5}" />
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Controls.Button" />
+													</Property>
+													<Property Name="WPFControlText">
+														<Value Value="LOGIN" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="QuanLyNhaHang" Owner="{04B7AD39-4019-4E58-A9E3-AB58F00644B1}">
+			<Child Name="wndConsoleWindowClass" Owner="{6CDCAB6E-5127-483B-B9F6-28553B65108C}" />
+			<Child Name="HwndSource_MainWindow" Owner="{BE935788-FB3C-434F-AB6A-BA3CE73B99BB}">
+				<Child Name="MainWindow" Owner="{E65304F3-2A23-410C-BD29-6FCCDE52C6D7}">
+					<Child Name="usernameContainer" Owner="{DF64C068-DBB6-4FBC-8B44-BA454892A0CE}" />
+					<Child Name="passwordBox" Owner="{133A4F22-94A0-4755-A9D5-726F4A2DCE6D}" />
+					<Child Name="ButtonLogin" Owner="{8EA8B022-A992-43B9-A2CE-4ACA96ADD122}" />
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

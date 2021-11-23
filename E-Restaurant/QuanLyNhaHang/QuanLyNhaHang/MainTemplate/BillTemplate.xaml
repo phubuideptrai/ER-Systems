@@ -1,0 +1,191 @@
+﻿<Window
+    x:Class="QuanLyNhaHang.BillTemplate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:QuanLyNhaHang"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="BillTemplate"
+    Width="793"
+    Height="auto"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid x:Name="billGrd">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="restaurantInformation" VerticalAlignment="Center">
+                <Image Height="110" Source="/MainTemplate/restaurant.png" />
+            </Grid>
+
+
+            <Border
+                Grid.Column="1"
+                BorderBrush="Green"
+                BorderThickness="5"
+                CornerRadius="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="invoiceIDContainer" Grid.Row="0">
+                        <TextBlock
+                            x:Name="invoiceID"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="20"
+                            Text="Invoice Number 1111" />
+                    </Grid>
+                    <Grid x:Name="dateCheckinContainer" Grid.Row="1">
+                        <StackPanel
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="20"
+                                Text="Date check in: " />
+                            <TextBlock
+                                x:Name="dateCheckinTxb"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="20"
+                                Text="18:00 28/1/2021" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid x:Name="dateCheckOutContainer" Grid.Row="2">
+                        <StackPanel
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="20"
+                                Text="Date check out: " />
+                            <TextBlock
+                                x:Name="dateCheckOutTxb"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="20"
+                                Text="21:00 28/1/2021" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid x:Name="staffIDContainer" Grid.Row="3">
+                        <TextBlock
+                            x:Name="staffID"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="20"
+                            Text="Staff ID: 1111" />
+                    </Grid>
+                </Grid>
+            </Border>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <materialDesign:Card Background="LightGreen" />
+            <TextBlock
+                x:Name="invoice"
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="100,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="25"
+                FontStyle="Italic"
+                Text="Invoice: #1001" />
+        </Grid>
+
+        <DataGrid
+            x:Name="gridBill"
+            Grid.Row="2"
+            Margin="0,10"
+            AutoGenerateColumns="True"
+            AutoGeneratingColumn="gridBill_AutoGeneratingColumn"
+            FontSize="19"
+            UseLayoutRounding="False" />
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                x:Name="subTotalTxb"
+                Margin="20,0"
+                VerticalAlignment="Bottom"
+                FontSize="15"
+                FontWeight="Bold"
+                Text="Subtotal: " />
+            <TextBlock
+                x:Name="discountTxb"
+                Grid.Column="1"
+                VerticalAlignment="Bottom"
+                FontSize="15"
+                FontWeight="Bold"
+                Text="Discount: " />
+            <TextBlock
+                x:Name="totalTxb"
+                Grid.Column="2"
+                VerticalAlignment="Bottom"
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Total: " />
+
+        </Grid>
+        <Grid Grid.Row="4" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontFamily="Blackadder ITC"
+                    FontSize="40"
+                    FontStyle="Italic"
+                    FontWeight="Bold"
+                    Foreground="Green"
+                    Text="Thanks for choosing us today" />
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button
+                    x:Name="exportBillBtn"
+                    Width="78"
+                    Height="63"
+                    Margin="0,0,50,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Click="exportBillBtn_Click_1">
+                    <materialDesign:PackIcon
+                        Width="39"
+                        Height="90"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="15"
+                        Foreground="Wheat"
+                        Kind="Printer" />
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Window>
