@@ -12,8 +12,8 @@ namespace QuanLyNhaHang.DAO
     {
         private static DataProvider instance;
      
-        private string connectionString = @"Data Source=LAPTOP-2EQI5L4R\SQLEXPRESS;Initial Catalog=ERSystem;Integrated Security=True";
-        //private string connectionString = @"Data Source=DESKTOP-2D2JACT\SQLEXPRESS;Initial Catalog=ERSystem;Integrated Security=True";
+        //private string connectionString = @"Data Source=LAPTOP-2EQI5L4R\SQLEXPRESS;Initial Catalog=ERSystem;Integrated Security=True";
+        private string connectionString = @"Data Source=DESKTOP-2D2JACT\SQLEXPRESS;Initial Catalog=ERSystem;Integrated Security=True";
         //private string connectionString = @"Data Source=LAPTOP-0ASFR8ME\MYSQLSERVER;Initial Catalog=ERSystem;Integrated Security=True";
         private DataProvider() { }
 

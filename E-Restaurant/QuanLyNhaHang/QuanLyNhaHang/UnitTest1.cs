@@ -5,12 +5,12 @@ namespace QuanLyNhaHang
 {
     public class Tests
     {
-        private Base _model;
+        private BaseDAO _model;
 
         [SetUp]
         public void SetUp()
         {
-            _model = new Base();
+            _model = new BaseDAO();
         }
 
         [Test]

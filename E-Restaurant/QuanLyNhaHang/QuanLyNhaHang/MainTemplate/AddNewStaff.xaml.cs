@@ -44,23 +44,34 @@ namespace QuanLyNhaHang
                     MessageBox.Show("Please fill out the form first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 else
                 {
-                    if (StaffDAO.Instance.CheckPhoneExist(phone) == 0 && StaffDAO.Instance.CheckEmailExist(email) == 0)
+                    if (BaseDAO.Instance.IsValidEmail(email))
                     {
-                        if (AccountDAO.Instance.CheckUsernamelExist(UserName) == 0)
+                        if (BaseDAO.Instance.IsValidPhoneNumber(phone))
                         {
-                            StaffDAO.Instance.InsertStaff(name, sex, email, phone, Int32.Parse(salary), position);
+                            if (StaffDAO.Instance.CheckPhoneExist(phone) == 0 && StaffDAO.Instance.CheckEmailExist(email) == 0)
+                            {
+                                if (AccountDAO.Instance.CheckUsernamelExist(UserName) == 0)
+                                {
+                                    StaffDAO.Instance.InsertStaff(name, sex, email, phone, Int32.Parse(salary), position);
 
-                            AccountDAO.Instance.InsertAccount(UserName, StaffDAO.Instance.GetMaxIdStaff());
+                                    AccountDAO.Instance.InsertAccount(UserName, StaffDAO.Instance.GetMaxIdStaff());
 
-                            MessageBox.Show("Add new staff successfuly");
+                                    MessageBox.Show("Add new staff successfuly");
 
-                            this.Close();
+                                    this.Close();
+                                }
+                                else
+                                    MessageBox.Show("Username is exist");
+                            }
+                            else
+                                MessageBox.Show("Phone or Email is exist");
                         }
                         else
-                            MessageBox.Show("Username is exist");
+                            MessageBox.Show("Phone is invalid");
                     }
                     else
-                        MessageBox.Show("Phone or Email is exist");
+                        MessageBox.Show("Email is invalid");
+
                 }
             }
             catch (Exception ex)

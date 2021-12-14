@@ -8,8 +8,20 @@ using System.Threading.Tasks;
 
 namespace QuanLyNhaHang
 {
-    class Base
+    class BaseDAO
     {
+        private static BaseDAO instance;
+
+        public static BaseDAO Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new BaseDAO();
+                return instance;
+            }
+            private set => instance = value;
+        }
         public string MD5Hash(string str)
         {
             StringBuilder hash = new StringBuilder();

@@ -4,16 +4,16 @@
 exe
 C#
 .cs
-C:\Users\ACER\OneDrive\Desktop\E-Restaurant\QuanLyNhaHang\QuanLyNhaHang\obj\Debug\net5.0-windows\
+E:\DOAN\ER-Systems\E-Restaurant\QuanLyNhaHang\QuanLyNhaHang\obj\Debug\net5.0-windows\
 QuanLyNhaHang
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\ACER\OneDrive\Desktop\E-Restaurant\QuanLyNhaHang\QuanLyNhaHang\App.xaml
+E:\DOAN\ER-Systems\E-Restaurant\QuanLyNhaHang\QuanLyNhaHang\App.xaml
 42-1700424989
-3-1900177154
-63-1268245194
-210-1067748912
+3-706075199
+63663323992
+210-2125480485
 MainTemplate\AddNewMeal.xaml;MainTemplate\AddNewStaff.xaml;MainTemplate\AddNewTable.xaml;MainTemplate\BillTemplate.xaml;MainTemplate\ChangePassword.xaml;MainTemplate\ChefForm.xaml;MainTemplate\EditMeal.xaml;MainTemplate\EditStaff.xaml;MainTemplate\EditTable.xaml;MainTemplate\InfoStaff.xaml;MainTemplate\Login.xaml;MainTemplate\ManagerForm.xaml;MainTemplate\ModifyCategory.xaml;MainTemplate\WaiterForm.xaml;UI\Account\AccountCard.xaml;UI\Account\AccountManager.xaml;UI\ButtonManager.xaml;UI\Category\CategoryCard.xaml;UI\Category\CategoryManager.xaml;UI\Chef\ChangeMealStatusCard.xaml;UI\Chef\ChangeMealStatusManager.xaml;UI\MealPicker\AdditionalNote.xaml;UI\MealPicker\SelectCategory.xaml;UI\MealPicker\SelectQuantity.xaml;UI\MealStatus\MealStatusCard.xaml;UI\MealStatus\MealStatusManager.xaml;UI\Meal\MealButton.xaml;UI\Meal\MealCard.xaml;UI\Meal\MealManager.xaml;UI\Report\CartesianChart.xaml;UI\Report\CompareWithLastMonthCard.xaml;UI\Report\ReportManager.xaml;UI\Report\TotalProfitCard.xaml;UI\Report\UserRatingCard.xaml;UI\SearchBox.xaml;UI\Staff\StaffCard.xaml;UI\Staff\StaffManager.xaml;UI\TableManager\DiscountField.xaml;UI\TableManager\SelectTable.xaml;UI\TableManager\Table.xaml;UI\Table\TableCard.xaml;UI\Table\TableManager.xaml;
 
 False
